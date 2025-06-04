@@ -2,26 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="icon" href="mylogo.png" />
-        <link rel="icon" href="%PUBLIC_URL%/mylogo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#000000" />
-        <meta
-            name="description"
-            content="My Portfolio" />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/mylogo.png" />
+        <meta name="description" content="My Portfolio">
+        <meta name="theme-color" content="#000000">
         <title>EmmyCode</title>
+
+        <!-- Favicon and Touch Icon -->
+        <link rel="icon" href="mylogo.png">
+        <link rel="apple-touch-icon" href="mylogo.png">
+
+        <!-- Font Awesome for Icons -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <!-- Your Custom Styles -->
         <link rel="stylesheet" href="index.css">
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
     </head>
+
     <body>
         <div class="navbar">
             <div class="logo">
-                <img src="Images/mylogo.png" alt class="logo-image">
-                <a href="/"><p class="logo-name">EMMYCODE</p></a>
+                <a href="/"><img src="Images/mylogo.png" alt
+                        class="logo-image"></a>
             </div>
             <div class="menu-toggle" id="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -34,34 +36,38 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div id="home" class="home">
-            <img src="Images/pics1.jpg" alt class="logo-image">
-            <div class="text">
-                <p class="hello">Hello, I am</p>
-                <p class="name">OLUKOYA EMMANUEL</p>
-                <div class="who">
-                    <div id="text-typing"></div>
-                </div>
-                <div class="social-icons">
-                    <a
-                        href="https://web.facebook.com/profile.php?id=100074979452476"
-                        target="_blank"
-                        class="fab fa-facebook"></a>
-
-                    <a href="https://x.com/Emmyboi000" target="_blank"
-                        class="fab fa-twitter"></a>
-
-                    <a
-                        href="https://www.linkedin.com/in/emmanuel-olukoya-2b7b00268"
-                        target="_blank"
-                        class="fab fa-linkedin"></a>
-
-                    <a href="https://github.com/Emmyboii" target="_blank"
-                        class="fab fa-github"></a>
+        <div id="home" class="home hero-section">
+            <div class="overlay">
+                <div class="content">
+                    <p class="hello">Hey there! I'm</p>
+                    <h1 class="name">Olukoya Emmanuel</h1>
+                    <div class="typing-role">
+                        <span id="text-typing"></span>
+                    </div>
+                    <p class="description">
+                        A passionate developer crafting beautiful and functional
+                        digital experiences from concept to deployment.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn-primary">View
+                            Projects</a>
+                        <a href="#contact" class="btn-secondary">Hire Me</a>
+                    </div>
+                    <div class="social-icons">
+                        <a
+                            href="https://web.facebook.com/profile.php?id=100074979452476"
+                            target="_blank" class="fab fa-facebook"></a>
+                        <a href="https://x.com/Emmyboi000" target="_blank"
+                            class="fab fa-twitter"></a>
+                        <a
+                            href="https://www.linkedin.com/in/emmanuel-olukoya-2b7b00268"
+                            target="_blank" class="fab fa-linkedin"></a>
+                        <a href="https://github.com/Emmyboii" target="_blank"
+                            class="fab fa-github"></a>
+                    </div>
                 </div>
             </div>
         </div>
-
         <div id="about" class="about">
             <h1>ABOUT ME</h1>
             <div class="details">
@@ -223,6 +229,43 @@
 
                 <div class="project_details">
                     <div class="description">
+                        <img src="Images/Reccur.png" alt>
+                    </div>
+                    <div class="detail">
+                        <h3>Reccur</h3>
+                        <p>
+                            Reccur is a platform where user are able to move
+                            money across the globe. Users are able to send,
+                            receive, convert, and manage money globally, whether
+                            earning in crypto, freelancing worldwide, or just
+                            living globally.
+                        </p>
+                        <button class="btn"><a target="_blank"
+                                href="https://www.tryreccur.com/">View</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project_details">
+                    <div class="description">
+                        <img src="Images/Zimlink.png" alt>
+                    </div>
+                    <div class="detail">
+                        <h3>Zimlink Contractor</h3>
+                        <p>
+                            Built a website for a Home service Industry in
+                            Newport whose goal is to provide expert repairs,
+                            installations, and maintenance to keep homes safe
+                            and running smoothly
+                        </p>
+                        <button class="btn"><a target="_blank"
+                                href="https://zim-link-contractors.vercel.app/">View</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project_details">
+                    <div class="description">
                         <img src="Images/finance.JPG" alt>
                     </div>
                     <div class="detail">
@@ -239,18 +282,18 @@
 
                 <div class="project_details">
                     <div class="description">
-                        <img src="Images/lidc.JPG" alt>
+                        <img src="Images/Richsterling.png" alt>
                     </div>
                     <div class="detail">
-                        <h3>LASU IDC</h3>
+                        <h3>Rich Sterling Hires</h3>
                         <p>
-                            LIDC is a website used by Lagos State University
-                            allowing students to register, view their results
-                            and many more. This website is just a replica of the
-                            main website. It's very responsive.
+                            Rich Sterling Hires, a platform that connects
+                            clients with skilled professionals for hire — making
+                            it easy to find and book experts across various
+                            fields.
                         </p>
                         <button class="btn"><a target="_blank"
-                                href="https://lidc-clone.vercel.app/">View</a>
+                                href="https://www.richsterlinghires.com/">View</a>
                         </button>
                     </div>
                 </div>
@@ -270,6 +313,24 @@
                         </p>
                         <button class="btn"><a target="_blank"
                                 href="https://thronebusinessinstituteswitzerland.com/">View</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project_details">
+                    <div class="description">
+                        <img src="Images/lidc.JPG" alt>
+                    </div>
+                    <div class="detail">
+                        <h3>LASU IDC</h3>
+                        <p>
+                            LIDC is a website used by Lagos State University
+                            allowing students to register, view their results
+                            and many more. This website is just a replica of the
+                            main website. It's very responsive.
+                        </p>
+                        <button class="btn"><a target="_blank"
+                                href="https://lidc-clone.vercel.app/">View</a>
                         </button>
                     </div>
                 </div>
@@ -298,42 +359,50 @@
             <p class="question">Have any Question?</p>
             <p class="email">Send Me an Email Below</p>
             <div class="form">
-                <form>
+                <form id="contactForm">
                     <div class="labels">
                         <label for="firstName">
                             <p>First Name</p>
-                            <input type="text" name id="firstName">
+                            <input type="text" name="firstName" id="firstName"
+                                required>
                         </label>
 
                         <label for="lastName">
                             <p>Last Name</p>
-                            <input type="text" name id="lastName">
+                            <input type="text" name="lastName" id="lastName"
+                                required>
                         </label>
                     </div>
 
                     <div class="labels">
                         <label for="mobile">
                             <p>Mobile Number</p>
-                            <input type="text" name id="mobile">
+                            <input type="number" name="mobile" id="mobile"
+                                required>
                         </label>
 
                         <label for="email">
                             <p>Email Address</p>
-                            <input type="text" name id="email">
+                            <input type="email" name="email" id="email"
+                                required>
                         </label>
                     </div>
+
                     <div class="message">
                         <p>Your Message</p>
-                        <textarea name id></textarea>
+                        <textarea name="message" id="message"
+                            required></textarea>
                     </div>
-                    <button>Send Message</button>
+
+                    <button type="submit">Send Message</button>
                 </form>
+
             </div>
         </div>
         <footer>
             <p>Copyright &copy 2025 || All Rights Reserved</p>
         </footer>
 
-        <script src="index.js"></script>
+        <script src="index.js" defer></script>
     </body>
 </html>
