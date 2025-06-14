@@ -359,44 +359,82 @@
             <p class="question">Have any Question?</p>
             <p class="email">Send Me an Email Below</p>
             <div class="form">
-                <form id="contactForm">
+                <form id="jotform" method="POST">
                     <div class="labels">
                         <label for="firstName">
                             <p>First Name</p>
-                            <input type="text" name="firstName" id="firstName"
-                                required>
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                required
+                                placeholder="Your first name" />
                         </label>
 
                         <label for="lastName">
                             <p>Last Name</p>
-                            <input type="text" name="lastName" id="lastName"
-                                required>
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                required
+                                placeholder="Your last name" />
                         </label>
                     </div>
 
                     <div class="labels">
-                        <label for="mobile">
+                        <label for="phone">
                             <p>Mobile Number</p>
-                            <input type="number" name="mobile" id="mobile"
-                                required>
+                            <input
+                                id="phone"
+                                name="phone"
+                                type="tel"
+                                maxlength="11"
+                                placeholder="Your mobile number"
+                                required />
                         </label>
 
                         <label for="email">
                             <p>Email Address</p>
-                            <input type="email" name="email" id="email"
-                                required>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="you@example.com" />
                         </label>
                     </div>
 
                     <div class="message">
                         <p>Your Message</p>
-                        <textarea name="message" id="message"
-                            required></textarea>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                            placeholder="How can we assist you?"></textarea>
                     </div>
 
-                    <button type="submit">Send Message</button>
+                    <button
+                        id="submitBtn"
+                        type="submit">
+                        Send Message
+                    </button>
                 </form>
-
+                <div id="custom-toast" style="
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 9999;
+"></div>
             </div>
         </div>
         <footer>
